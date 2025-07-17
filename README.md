@@ -1,59 +1,153 @@
-# Spa
+# 🍽️ Restaurant Management System - Frontend
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.0.1.
+Sistema de gestión de restaurante desarrollado con Angular. Permite administrar menús, usuarios y órdenes de manera eficiente.
 
-## Development server
+## 🚀 Características
 
-To start a local development server, run:
+- ✅ **Autenticación de usuarios** (Sign in / Sign up)
+- ✅ **Gestión de menús** (CRUD completo)
+- ✅ **Navegación dinámica**
+- ✅ **Validación de formularios**
+- ✅ **Integración con backend API**
+- 🚧 **Módulo de órdenes** (En desarrollo)
 
-```bash
-ng serve
+
+## ⚡ Instalación y Configuración
+
+1. **Clonar el repositorio**
+   ```bash
+   git clone https://github.com/n-williamsons/bit-frontend.git
+   cd bit-frontend
+   ```
+
+2. **Instalar dependencias**
+   ```bash
+   npm install
+   ```
+
+3. **Configurar la API**
+   - Asegúrate de que tu backend esté ejecutándose en `http://localhost:3000`
+   - Verifica la configuración en `src/app/services/`
+
+4. **Ejecutar la aplicación**
+   ```bash
+   ng serve
+   ```
+
+5. **Abrir en el navegador**
+   ```
+   http://localhost:4200
+   ```
+
+## 📁 Estructura del Proyecto
+
+```
+src/
+├── app/
+│   ├── components/
+│   │   ├── pages/
+│   │   │   ├── home/          # Página de inicio
+│   │   │   ├── menu/          # Gestión de menús
+│   │   │   ├── orders/        # Órdenes (en desarrollo)
+│   │   │   ├── sign-in/       # Iniciar sesión
+│   │   │   ├── sign-up/       # Registrarse
+│   │   │   └── page-not-found/ # Error 404
+│   │   └── shared/
+│   │       ├── header/        # Cabecera
+│   │       ├── footer/        # Pie de página
+│   │       └── navigation/    # Navegación
+│   ├── services/
+│   │   ├── menus.ts          # Servicio de menús
+│   │   ├── orders.ts         # Servicio de órdenes
+│   │   └── signin.ts         # Servicio de autenticación
+│   └── assets/
+│       └── images/           # Imágenes del proyecto
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+## 🎯 Funcionalidades Principales
 
-## Code scaffolding
+### **Autenticación**
+- Registro de nuevos usuarios
+- Inicio de sesión con JWT
+- Validación de formularios
+- Protección de rutas
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+### **Gestión de Menús**
+- Crear nuevos elementos del menú
+- Visualizar lista de menús
+- Editar menús existentes
+- Eliminar elementos del menú
+- Categorización por tipo de plato
 
-```bash
-ng generate component component-name
-```
+### **Dashboard**
+- Interfaz responsive
+- Navegación intuitiva
+- Cards informativas
+- Estados de carga
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
 
-```bash
-ng generate --help
-```
+## 🌐 API Endpoints
 
-## Building
+El frontend se conecta a los siguientes endpoints:
 
-To build the project run:
+- `POST /auth/signin` - Iniciar sesión
+- `POST /auth/signup` - Registrarse
+- `GET /menu` - Obtener menús
+- `POST /menu` - Crear menú
+- `PUT /menu/:id` - Actualizar menú
+- `DELETE /menu/:id` - Eliminar menú
 
-```bash
-ng build
-```
+## 📱 Responsive Design
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+El proyecto está optimizado para:
+- 📱 **Móviles** (< 576px)
+- 📱 **Tablets** (576px - 991px)
+- 💻 **Desktop** (> 992px)
 
-## Running unit tests
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+## 🔒 Seguridad
 
-```bash
-ng test
-```
+- Tokens JWT para autenticación
+- Validación de formularios del lado cliente
+- Protección contra inyección XSS
+- Manejo seguro de datos sensibles
 
-## Running end-to-end tests
+## 🚧 Próximas Características
 
-For end-to-end (e2e) testing, run:
+- [ ] Módulo de órdenes completo
+- [ ] Dashboard con estadísticas
+- [ ] Sistema de roles y permisos
+- [ ] Notificaciones en tiempo real
 
-```bash
-ng e2e
-```
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+## 🐛 Problemas Conocidos
 
-## Additional Resources
+- El módulo de órdenes está en mantenimiento
+- Algunas validaciones podrían mejorarse
+- Optimización de imágenes pendiente
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+
+
+## 📄 Licencia
+
+Este proyecto es de uso educativo - desarrollado como parte del bootcamp de programación.
+
+---
+
+## 👨‍💻 Autor
+
+**Nicolás Williamson Silva**  
+Junior Web Developer  
+📅 2025  
+
+---
+
+## 📬 Contacto
+
+¿Dudas o sugerencias? ¡Contáctame!
+
+- [LinkedIn](https://www.linkedin.com/in/nicolasws17)
+- [GitHub](https://github.com/n-williamsons)
+- [Email](mailto:silvanicolasandres@gmail.com)
+
+---
